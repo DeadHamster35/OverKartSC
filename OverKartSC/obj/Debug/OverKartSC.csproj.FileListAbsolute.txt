@@ -1,0 +1,13 @@
+E:\software\OverKartSC\OverKartSC\OverKartSC\bin\Debug\OverKartSC.exe.config
+E:\software\OverKartSC\OverKartSC\OverKartSC\bin\Debug\OverKartSC.exe
+E:\software\OverKartSC\OverKartSC\OverKartSC\bin\Debug\OverKartSC.pdb
+E:\software\OverKartSC\OverKartSC\OverKartSC\obj\Debug\OverKartSC.csprojAssemblyReference.cache
+E:\software\OverKartSC\OverKartSC\OverKartSC\obj\Debug\OverKartSC.StatsEditor.resources
+E:\software\OverKartSC\OverKartSC\OverKartSC\obj\Debug\OverKartSC.Properties.Resources.resources
+E:\software\OverKartSC\OverKartSC\OverKartSC\obj\Debug\OverKartSC.csproj.GenerateResource.cache
+E:\software\OverKartSC\OverKartSC\OverKartSC\obj\Debug\OverKartSC.csproj.CoreCompileInputs.cache
+E:\software\OverKartSC\OverKartSC\OverKartSC\obj\Debug\OverKartSC.exe
+E:\software\OverKartSC\OverKartSC\OverKartSC\obj\Debug\OverKartSC.pdb
+E:\software\OverKartSC\OverKartSC\OverKartSC\bin\Debug\OverKartSC Library.dll
+E:\software\OverKartSC\OverKartSC\OverKartSC\bin\Debug\OverKartSC Library.pdb
+E:\software\OverKartSC\OverKartSC\OverKartSC\obj\Debug\OverKartSC.csproj.CopyComplete

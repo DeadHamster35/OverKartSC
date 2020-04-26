@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverKartSC", "OverKartSC.csproj", "{61E0AF5D-D874-45A3-A235-5F4EC7DBEE2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverKartSC Library", "..\OverKartSC Library\OverKartSC Library.csproj", "{FAA0EBAC-86E6-444C-88A2-8CB66F59DB3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61E0AF5D-D874-45A3-A235-5F4EC7DBEE2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E0AF5D-D874-45A3-A235-5F4EC7DBEE2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E0AF5D-D874-45A3-A235-5F4EC7DBEE2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E0AF5D-D874-45A3-A235-5F4EC7DBEE2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAA0EBAC-86E6-444C-88A2-8CB66F59DB3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA0EBAC-86E6-444C-88A2-8CB66F59DB3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA0EBAC-86E6-444C-88A2-8CB66F59DB3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAA0EBAC-86E6-444C-88A2-8CB66F59DB3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3209456B-12EB-46A3-8C04-743463FE9BDC}
+	EndGlobalSection
+EndGlobal

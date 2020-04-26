@@ -1,0 +1,9 @@
+E:\software\OverKartSC\OverKartSC\OverKartSC Library\bin\Debug\netstandard2.0\OverKartSC Library.deps.json
+E:\software\OverKartSC\OverKartSC\OverKartSC Library\bin\Debug\netstandard2.0\OverKartSC Library.dll
+E:\software\OverKartSC\OverKartSC\OverKartSC Library\bin\Debug\netstandard2.0\OverKartSC Library.pdb
+E:\software\OverKartSC\OverKartSC\OverKartSC Library\obj\Debug\netstandard2.0\OverKartSC Library.csprojAssemblyReference.cache
+E:\software\OverKartSC\OverKartSC\OverKartSC Library\obj\Debug\netstandard2.0\OverKartSC Library.csproj.CoreCompileInputs.cache
+E:\software\OverKartSC\OverKartSC\OverKartSC Library\obj\Debug\netstandard2.0\OverKartSC Library.AssemblyInfoInputs.cache
+E:\software\OverKartSC\OverKartSC\OverKartSC Library\obj\Debug\netstandard2.0\OverKartSC Library.AssemblyInfo.cs
+E:\software\OverKartSC\OverKartSC\OverKartSC Library\obj\Debug\netstandard2.0\OverKartSC Library.dll
+E:\software\OverKartSC\OverKartSC\OverKartSC Library\obj\Debug\netstandard2.0\OverKartSC Library.pdb

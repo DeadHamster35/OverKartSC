@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "sy2HntPOMtQBYQkBf6ceDgOie3L0Zb8AejVlNv/het9VEmT9CV3WJDHcCIQMvbWliM+LV+PiihpGOKAE/3FNuw==",
+  "success": true,
+  "projectFilePath": "E:\\software\\OverKartSC\\OverKartSC\\OverKartSC Library\\OverKartSC Library.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\The Auditor\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\The Auditor\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
