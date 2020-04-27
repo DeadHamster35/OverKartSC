@@ -11,3 +11,5 @@ E:\software\OverKartSC\OverKartSC\OverKartSC\obj\Debug\OverKartSC.pdb
 E:\software\OverKartSC\OverKartSC\OverKartSC\bin\Debug\OverKartSC Library.dll
 E:\software\OverKartSC\OverKartSC\OverKartSC\bin\Debug\OverKartSC Library.pdb
 E:\software\OverKartSC\OverKartSC\OverKartSC\obj\Debug\OverKartSC.csproj.CopyComplete
+E:\software\OverKartSC\OverKartSC\OverKartSC\obj\Debug\OverKartSC.HeaderEditor.resources
+E:\software\OverKartSC\OverKartSC\OverKartSC\obj\Debug\OverKartSC.MainWindow.resources

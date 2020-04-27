@@ -49,8 +49,6 @@
             this.h3 = new System.Windows.Forms.TextBox();
             this.h2 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.speedloss = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.topspeed = new System.Windows.Forms.TextBox();
             this.saveBtn = new System.Windows.Forms.Button();
@@ -87,16 +85,31 @@
             this.w3 = new System.Windows.Forms.TextBox();
             this.w2 = new System.Windows.Forms.TextBox();
             this.w1 = new System.Windows.Forms.TextBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.sl8 = new System.Windows.Forms.TextBox();
+            this.sl7 = new System.Windows.Forms.TextBox();
+            this.sl6 = new System.Windows.Forms.TextBox();
+            this.sl5 = new System.Windows.Forms.TextBox();
+            this.sl4 = new System.Windows.Forms.TextBox();
+            this.sl3 = new System.Windows.Forms.TextBox();
+            this.sl2 = new System.Windows.Forms.TextBox();
+            this.sl1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // loadBtn
             // 
-            this.loadBtn.Location = new System.Drawing.Point(442, 316);
+            this.loadBtn.Location = new System.Drawing.Point(12, 12);
             this.loadBtn.Name = "loadBtn";
             this.loadBtn.Size = new System.Drawing.Size(75, 23);
             this.loadBtn.TabIndex = 0;
@@ -118,7 +131,7 @@
             "Wario",
             "Toad",
             "Yoshi"});
-            this.cSelect.Location = new System.Drawing.Point(629, 318);
+            this.cSelect.Location = new System.Drawing.Point(118, 46);
             this.cSelect.Name = "cSelect";
             this.cSelect.Size = new System.Drawing.Size(121, 21);
             this.cSelect.TabIndex = 2;
@@ -150,16 +163,16 @@
             this.groupBox1.Controls.Add(this.h3);
             this.groupBox1.Controls.Add(this.h2);
             this.groupBox1.Controls.Add(this.h1);
-            this.groupBox1.Location = new System.Drawing.Point(16, 98);
+            this.groupBox1.Location = new System.Drawing.Point(21, 113);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(734, 76);
+            this.groupBox1.Size = new System.Drawing.Size(376, 133);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Handling Array";
             // 
             // h16
             // 
-            this.h16.Location = new System.Drawing.Point(642, 45);
+            this.h16.Location = new System.Drawing.Point(279, 97);
             this.h16.Name = "h16";
             this.h16.Size = new System.Drawing.Size(85, 20);
             this.h16.TabIndex = 18;
@@ -167,7 +180,7 @@
             // 
             // h15
             // 
-            this.h15.Location = new System.Drawing.Point(552, 45);
+            this.h15.Location = new System.Drawing.Point(188, 97);
             this.h15.Name = "h15";
             this.h15.Size = new System.Drawing.Size(85, 20);
             this.h15.TabIndex = 17;
@@ -175,7 +188,7 @@
             // 
             // h14
             // 
-            this.h14.Location = new System.Drawing.Point(461, 45);
+            this.h14.Location = new System.Drawing.Point(97, 97);
             this.h14.Name = "h14";
             this.h14.Size = new System.Drawing.Size(85, 20);
             this.h14.TabIndex = 16;
@@ -183,7 +196,7 @@
             // 
             // h13
             // 
-            this.h13.Location = new System.Drawing.Point(371, 45);
+            this.h13.Location = new System.Drawing.Point(6, 97);
             this.h13.Name = "h13";
             this.h13.Size = new System.Drawing.Size(85, 20);
             this.h13.TabIndex = 15;
@@ -191,7 +204,7 @@
             // 
             // h12
             // 
-            this.h12.Location = new System.Drawing.Point(280, 45);
+            this.h12.Location = new System.Drawing.Point(279, 71);
             this.h12.Name = "h12";
             this.h12.Size = new System.Drawing.Size(85, 20);
             this.h12.TabIndex = 14;
@@ -199,7 +212,7 @@
             // 
             // h11
             // 
-            this.h11.Location = new System.Drawing.Point(189, 45);
+            this.h11.Location = new System.Drawing.Point(189, 71);
             this.h11.Name = "h11";
             this.h11.Size = new System.Drawing.Size(85, 20);
             this.h11.TabIndex = 13;
@@ -207,7 +220,7 @@
             // 
             // h10
             // 
-            this.h10.Location = new System.Drawing.Point(98, 45);
+            this.h10.Location = new System.Drawing.Point(97, 71);
             this.h10.Name = "h10";
             this.h10.Size = new System.Drawing.Size(85, 20);
             this.h10.TabIndex = 12;
@@ -215,7 +228,7 @@
             // 
             // h9
             // 
-            this.h9.Location = new System.Drawing.Point(7, 45);
+            this.h9.Location = new System.Drawing.Point(6, 71);
             this.h9.Name = "h9";
             this.h9.Size = new System.Drawing.Size(85, 20);
             this.h9.TabIndex = 11;
@@ -223,7 +236,7 @@
             // 
             // h8
             // 
-            this.h8.Location = new System.Drawing.Point(641, 19);
+            this.h8.Location = new System.Drawing.Point(279, 45);
             this.h8.Name = "h8";
             this.h8.Size = new System.Drawing.Size(85, 20);
             this.h8.TabIndex = 10;
@@ -231,7 +244,7 @@
             // 
             // h7
             // 
-            this.h7.Location = new System.Drawing.Point(551, 19);
+            this.h7.Location = new System.Drawing.Point(188, 45);
             this.h7.Name = "h7";
             this.h7.Size = new System.Drawing.Size(85, 20);
             this.h7.TabIndex = 9;
@@ -239,7 +252,7 @@
             // 
             // h6
             // 
-            this.h6.Location = new System.Drawing.Point(460, 19);
+            this.h6.Location = new System.Drawing.Point(97, 45);
             this.h6.Name = "h6";
             this.h6.Size = new System.Drawing.Size(85, 20);
             this.h6.TabIndex = 8;
@@ -247,7 +260,7 @@
             // 
             // h5
             // 
-            this.h5.Location = new System.Drawing.Point(370, 19);
+            this.h5.Location = new System.Drawing.Point(6, 45);
             this.h5.Name = "h5";
             this.h5.Size = new System.Drawing.Size(85, 20);
             this.h5.TabIndex = 7;
@@ -279,37 +292,18 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.speedloss);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.topspeed);
-            this.groupBox3.Location = new System.Drawing.Point(16, 12);
+            this.groupBox3.Location = new System.Drawing.Point(293, 27);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(196, 80);
+            this.groupBox3.Size = new System.Drawing.Size(104, 70);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Stats";
             // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(97, 42);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 20);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Speed Loss";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // speedloss
-            // 
-            this.speedloss.Location = new System.Drawing.Point(97, 19);
-            this.speedloss.Name = "speedloss";
-            this.speedloss.Size = new System.Drawing.Size(85, 20);
-            this.speedloss.TabIndex = 9;
-            this.speedloss.KeyUp += new System.Windows.Forms.KeyEventHandler(this.update);
-            // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(6, 42);
+            this.label5.Location = new System.Drawing.Point(7, 42);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 20);
             this.label5.TabIndex = 8;
@@ -318,7 +312,7 @@
             // 
             // topspeed
             // 
-            this.topspeed.Location = new System.Drawing.Point(6, 19);
+            this.topspeed.Location = new System.Drawing.Point(7, 19);
             this.topspeed.Name = "topspeed";
             this.topspeed.Size = new System.Drawing.Size(85, 20);
             this.topspeed.TabIndex = 3;
@@ -327,7 +321,7 @@
             // saveBtn
             // 
             this.saveBtn.Enabled = false;
-            this.saveBtn.Location = new System.Drawing.Point(523, 316);
+            this.saveBtn.Location = new System.Drawing.Point(93, 12);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(75, 23);
             this.saveBtn.TabIndex = 12;
@@ -353,16 +347,16 @@
             this.groupBox4.Controls.Add(this.a3);
             this.groupBox4.Controls.Add(this.a2);
             this.groupBox4.Controls.Add(this.a1);
-            this.groupBox4.Location = new System.Drawing.Point(16, 193);
+            this.groupBox4.Location = new System.Drawing.Point(403, 113);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(734, 76);
+            this.groupBox4.Size = new System.Drawing.Size(376, 133);
             this.groupBox4.TabIndex = 19;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Acceleration Array";
             // 
             // a16
             // 
-            this.a16.Location = new System.Drawing.Point(641, 45);
+            this.a16.Location = new System.Drawing.Point(279, 97);
             this.a16.Name = "a16";
             this.a16.Size = new System.Drawing.Size(85, 20);
             this.a16.TabIndex = 18;
@@ -370,7 +364,7 @@
             // 
             // a15
             // 
-            this.a15.Location = new System.Drawing.Point(551, 45);
+            this.a15.Location = new System.Drawing.Point(188, 97);
             this.a15.Name = "a15";
             this.a15.Size = new System.Drawing.Size(85, 20);
             this.a15.TabIndex = 17;
@@ -378,7 +372,7 @@
             // 
             // a14
             // 
-            this.a14.Location = new System.Drawing.Point(460, 45);
+            this.a14.Location = new System.Drawing.Point(97, 97);
             this.a14.Name = "a14";
             this.a14.Size = new System.Drawing.Size(85, 20);
             this.a14.TabIndex = 16;
@@ -386,7 +380,7 @@
             // 
             // a13
             // 
-            this.a13.Location = new System.Drawing.Point(370, 45);
+            this.a13.Location = new System.Drawing.Point(6, 97);
             this.a13.Name = "a13";
             this.a13.Size = new System.Drawing.Size(85, 20);
             this.a13.TabIndex = 15;
@@ -394,7 +388,7 @@
             // 
             // a12
             // 
-            this.a12.Location = new System.Drawing.Point(279, 45);
+            this.a12.Location = new System.Drawing.Point(279, 71);
             this.a12.Name = "a12";
             this.a12.Size = new System.Drawing.Size(85, 20);
             this.a12.TabIndex = 14;
@@ -402,7 +396,7 @@
             // 
             // a11
             // 
-            this.a11.Location = new System.Drawing.Point(188, 45);
+            this.a11.Location = new System.Drawing.Point(188, 71);
             this.a11.Name = "a11";
             this.a11.Size = new System.Drawing.Size(85, 20);
             this.a11.TabIndex = 13;
@@ -410,7 +404,7 @@
             // 
             // a10
             // 
-            this.a10.Location = new System.Drawing.Point(97, 45);
+            this.a10.Location = new System.Drawing.Point(97, 71);
             this.a10.Name = "a10";
             this.a10.Size = new System.Drawing.Size(85, 20);
             this.a10.TabIndex = 12;
@@ -418,7 +412,7 @@
             // 
             // a9
             // 
-            this.a9.Location = new System.Drawing.Point(6, 45);
+            this.a9.Location = new System.Drawing.Point(6, 71);
             this.a9.Name = "a9";
             this.a9.Size = new System.Drawing.Size(85, 20);
             this.a9.TabIndex = 11;
@@ -426,7 +420,7 @@
             // 
             // a8
             // 
-            this.a8.Location = new System.Drawing.Point(642, 19);
+            this.a8.Location = new System.Drawing.Point(279, 45);
             this.a8.Name = "a8";
             this.a8.Size = new System.Drawing.Size(85, 20);
             this.a8.TabIndex = 10;
@@ -434,7 +428,7 @@
             // 
             // a7
             // 
-            this.a7.Location = new System.Drawing.Point(552, 19);
+            this.a7.Location = new System.Drawing.Point(187, 45);
             this.a7.Name = "a7";
             this.a7.Size = new System.Drawing.Size(85, 20);
             this.a7.TabIndex = 9;
@@ -442,7 +436,7 @@
             // 
             // a6
             // 
-            this.a6.Location = new System.Drawing.Point(461, 19);
+            this.a6.Location = new System.Drawing.Point(97, 45);
             this.a6.Name = "a6";
             this.a6.Size = new System.Drawing.Size(85, 20);
             this.a6.TabIndex = 8;
@@ -450,7 +444,7 @@
             // 
             // a5
             // 
-            this.a5.Location = new System.Drawing.Point(371, 19);
+            this.a5.Location = new System.Drawing.Point(6, 45);
             this.a5.Name = "a5";
             this.a5.Size = new System.Drawing.Size(85, 20);
             this.a5.TabIndex = 7;
@@ -458,7 +452,7 @@
             // 
             // a4
             // 
-            this.a4.Location = new System.Drawing.Point(280, 19);
+            this.a4.Location = new System.Drawing.Point(279, 19);
             this.a4.Name = "a4";
             this.a4.Size = new System.Drawing.Size(85, 20);
             this.a4.TabIndex = 6;
@@ -466,7 +460,7 @@
             // 
             // a3
             // 
-            this.a3.Location = new System.Drawing.Point(189, 19);
+            this.a3.Location = new System.Drawing.Point(188, 19);
             this.a3.Name = "a3";
             this.a3.Size = new System.Drawing.Size(85, 20);
             this.a3.TabIndex = 5;
@@ -474,7 +468,7 @@
             // 
             // a2
             // 
-            this.a2.Location = new System.Drawing.Point(98, 19);
+            this.a2.Location = new System.Drawing.Point(97, 19);
             this.a2.Name = "a2";
             this.a2.Size = new System.Drawing.Size(85, 20);
             this.a2.TabIndex = 4;
@@ -482,7 +476,7 @@
             // 
             // a1
             // 
-            this.a1.Location = new System.Drawing.Point(7, 19);
+            this.a1.Location = new System.Drawing.Point(6, 19);
             this.a1.Name = "a1";
             this.a1.Size = new System.Drawing.Size(85, 20);
             this.a1.TabIndex = 3;
@@ -498,16 +492,17 @@
             this.groupBox2.Controls.Add(this.ormud);
             this.groupBox2.Controls.Add(this.orsnow);
             this.groupBox2.Controls.Add(this.orgrass);
-            this.groupBox2.Location = new System.Drawing.Point(16, 275);
+            this.groupBox2.Location = new System.Drawing.Point(403, 27);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(374, 80);
+            this.groupBox2.Size = new System.Drawing.Size(376, 80);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Off-Road Stats";
+            this.groupBox2.Visible = false;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(284, 42);
+            this.label4.Location = new System.Drawing.Point(280, 42);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 20);
             this.label4.TabIndex = 26;
@@ -516,7 +511,7 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(192, 42);
+            this.label3.Location = new System.Drawing.Point(188, 42);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 20);
             this.label3.TabIndex = 25;
@@ -525,7 +520,7 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(101, 42);
+            this.label2.Location = new System.Drawing.Point(97, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 20);
             this.label2.TabIndex = 24;
@@ -534,7 +529,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(10, 42);
+            this.label1.Location = new System.Drawing.Point(6, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 20);
             this.label1.TabIndex = 23;
@@ -543,7 +538,7 @@
             // 
             // orwater
             // 
-            this.orwater.Location = new System.Drawing.Point(283, 19);
+            this.orwater.Location = new System.Drawing.Point(279, 19);
             this.orwater.Name = "orwater";
             this.orwater.Size = new System.Drawing.Size(85, 20);
             this.orwater.TabIndex = 22;
@@ -551,7 +546,7 @@
             // 
             // ormud
             // 
-            this.ormud.Location = new System.Drawing.Point(192, 19);
+            this.ormud.Location = new System.Drawing.Point(188, 19);
             this.ormud.Name = "ormud";
             this.ormud.Size = new System.Drawing.Size(85, 20);
             this.ormud.TabIndex = 21;
@@ -559,7 +554,7 @@
             // 
             // orsnow
             // 
-            this.orsnow.Location = new System.Drawing.Point(101, 19);
+            this.orsnow.Location = new System.Drawing.Point(97, 19);
             this.orsnow.Name = "orsnow";
             this.orsnow.Size = new System.Drawing.Size(85, 20);
             this.orsnow.TabIndex = 20;
@@ -567,7 +562,7 @@
             // 
             // orgrass
             // 
-            this.orgrass.Location = new System.Drawing.Point(10, 19);
+            this.orgrass.Location = new System.Drawing.Point(6, 19);
             this.orgrass.Name = "orgrass";
             this.orgrass.Size = new System.Drawing.Size(85, 20);
             this.orgrass.TabIndex = 19;
@@ -581,7 +576,7 @@
             this.groupBox5.Controls.Add(this.w3);
             this.groupBox5.Controls.Add(this.w2);
             this.groupBox5.Controls.Add(this.w1);
-            this.groupBox5.Location = new System.Drawing.Point(462, 12);
+            this.groupBox5.Location = new System.Drawing.Point(491, 27);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(288, 80);
             this.groupBox5.TabIndex = 27;
@@ -636,18 +631,122 @@
             this.w1.TabIndex = 20;
             this.w1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.update);
             // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.label6);
+            this.groupBox7.Controls.Add(this.groupBox1);
+            this.groupBox7.Controls.Add(this.groupBox4);
+            this.groupBox7.Controls.Add(this.groupBox5);
+            this.groupBox7.Controls.Add(this.cSelect);
+            this.groupBox7.Controls.Add(this.groupBox3);
+            this.groupBox7.Location = new System.Drawing.Point(12, 41);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(798, 262);
+            this.groupBox7.TabIndex = 30;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Character Stats";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.groupBox6);
+            this.groupBox8.Controls.Add(this.groupBox2);
+            this.groupBox8.Location = new System.Drawing.Point(12, 322);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(798, 121);
+            this.groupBox8.TabIndex = 31;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Global Stats";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.sl8);
+            this.groupBox6.Controls.Add(this.sl7);
+            this.groupBox6.Controls.Add(this.sl6);
+            this.groupBox6.Controls.Add(this.sl5);
+            this.groupBox6.Controls.Add(this.sl4);
+            this.groupBox6.Controls.Add(this.sl3);
+            this.groupBox6.Controls.Add(this.sl2);
+            this.groupBox6.Controls.Add(this.sl1);
+            this.groupBox6.Location = new System.Drawing.Point(21, 30);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(376, 77);
+            this.groupBox6.TabIndex = 5;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Speed Loss";
+            // 
+            // sl8
+            // 
+            this.sl8.Location = new System.Drawing.Point(279, 45);
+            this.sl8.Name = "sl8";
+            this.sl8.Size = new System.Drawing.Size(85, 20);
+            this.sl8.TabIndex = 10;
+            // 
+            // sl7
+            // 
+            this.sl7.Location = new System.Drawing.Point(189, 45);
+            this.sl7.Name = "sl7";
+            this.sl7.Size = new System.Drawing.Size(85, 20);
+            this.sl7.TabIndex = 9;
+            // 
+            // sl6
+            // 
+            this.sl6.Location = new System.Drawing.Point(97, 45);
+            this.sl6.Name = "sl6";
+            this.sl6.Size = new System.Drawing.Size(85, 20);
+            this.sl6.TabIndex = 8;
+            // 
+            // sl5
+            // 
+            this.sl5.Location = new System.Drawing.Point(6, 45);
+            this.sl5.Name = "sl5";
+            this.sl5.Size = new System.Drawing.Size(85, 20);
+            this.sl5.TabIndex = 7;
+            // 
+            // sl4
+            // 
+            this.sl4.Location = new System.Drawing.Point(279, 19);
+            this.sl4.Name = "sl4";
+            this.sl4.Size = new System.Drawing.Size(85, 20);
+            this.sl4.TabIndex = 6;
+            // 
+            // sl3
+            // 
+            this.sl3.Location = new System.Drawing.Point(188, 19);
+            this.sl3.Name = "sl3";
+            this.sl3.Size = new System.Drawing.Size(85, 20);
+            this.sl3.TabIndex = 5;
+            // 
+            // sl2
+            // 
+            this.sl2.Location = new System.Drawing.Point(97, 19);
+            this.sl2.Name = "sl2";
+            this.sl2.Size = new System.Drawing.Size(85, 20);
+            this.sl2.TabIndex = 4;
+            // 
+            // sl1
+            // 
+            this.sl1.Location = new System.Drawing.Point(6, 19);
+            this.sl1.Name = "sl1";
+            this.sl1.Size = new System.Drawing.Size(85, 20);
+            this.sl1.TabIndex = 3;
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(24, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 20);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Character";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // StatsEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 373);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
+            this.ClientSize = new System.Drawing.Size(825, 451);
+            this.Controls.Add(this.groupBox8);
+            this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.saveBtn);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.cSelect);
             this.Controls.Add(this.loadBtn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StatsEditor";
@@ -662,6 +761,10 @@
             this.groupBox2.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -724,8 +827,18 @@
         private System.Windows.Forms.TextBox w6;
         private System.Windows.Forms.TextBox w5;
         private System.Windows.Forms.TextBox w4;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.TextBox sl8;
+        private System.Windows.Forms.TextBox sl7;
+        private System.Windows.Forms.TextBox sl6;
+        private System.Windows.Forms.TextBox sl5;
+        private System.Windows.Forms.TextBox sl4;
+        private System.Windows.Forms.TextBox sl3;
+        private System.Windows.Forms.TextBox sl2;
+        private System.Windows.Forms.TextBox sl1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox speedloss;
     }
 }
 

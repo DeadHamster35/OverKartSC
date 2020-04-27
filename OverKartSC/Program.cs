@@ -16,7 +16,7 @@ namespace OverKartSC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StatsEditor());
+            Application.Run(new MainWindow());
         }
     }
 }

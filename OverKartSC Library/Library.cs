@@ -17,8 +17,7 @@ namespace OverKartSC_Library
 
         public class Character
         {
-            public int topSpeed { get; set; }
-            public int speedLoss { get; set; }
+            public int topSpeed { get; set; }            
             public int[] handlingStats { get; set; }
             public int[] offroadStats { get; set; }
             public int[] accelerationStats { get; set; }
@@ -26,28 +25,113 @@ namespace OverKartSC_Library
 
         }
 
-        public Character[] loadStats(byte[] fileData)
+        public class Header
         {
-            Character[] characterOutput = new Character[8];
+            public HeaderElement[] headerElement { get; set; }
+        }
+        public class HeaderElement
+        {
+            public byte[] elementBytes { get; set; }
+        }
+
+
+
+        public Header[] loadHeader(byte[] fileData)
+        {
+            Header[] outputHeader = new Header[44];  //44 = number of courses
+
+
+            //initialize all elements
+            
+
+            for (int headerIndex = 0; headerIndex < 44; headerIndex++)
+            {
+                outputHeader[headerIndex] = new Header();
+                outputHeader[headerIndex].headerElement = new HeaderElement[14];
+                for (int elementIndex = 0; elementIndex < 14; elementIndex++)  //14 = number of elements
+                {
+                    outputHeader[headerIndex].headerElement[elementIndex] = new HeaderElement();
+                    outputHeader[headerIndex].headerElement[elementIndex].elementBytes = new byte[4];
+                }
+            }
+
 
             mStream = new MemoryStream(fileData);
             bWriter = new BinaryWriter(mStream);
             bReader = new BinaryReader(mStream);
 
+            bReader.BaseStream.Position = 0xE7FFC;  //offset to header table
 
-            //initialize all elements inside the array
+            for (int currentCourse = 0; currentCourse < 44; currentCourse++)  //44 course headers
+            {
+                for (int currentElement = 0; currentElement < 14; currentElement++)  //14 elements per header.
+                {
+
+                    outputHeader[currentCourse].headerElement[currentElement].elementBytes = bReader.ReadBytes(4);
+                    Array.Reverse(outputHeader[currentCourse].headerElement[currentElement].elementBytes);
+                }
+            }
+
+            return outputHeader;
+        }
+
+
+
+        public byte[] saveHeader(byte[] fileData, Header[] courseHeader)
+        {
+            
+            mStream = new MemoryStream(fileData);
+            bWriter = new BinaryWriter(mStream);
+            bReader = new BinaryReader(mStream);
+
+            bReader.BaseStream.Position = 0xE7FFC;  //offset to header table
+
+            for (int currentCourse = 0; currentCourse < 44; currentCourse++)  //44 course headers
+            {
+                for (int currentElement = 0; currentElement < 14; currentElement++)  //14 elements per header.
+                {
+                    Array.Reverse(courseHeader[currentCourse].headerElement[currentElement].elementBytes);
+                    bWriter.Write(BitConverter.ToInt32(courseHeader[currentCourse].headerElement[currentElement].elementBytes, 0));
+                }
+            }
+
+            byte[] outputData = mStream.ToArray();
+            return outputData;
+        }
+
+
+
+
+        public void loadStats(ref Character[] characterOutput, ref int[] speedLoss, byte[] fileData)
+        {
+            mStream = new MemoryStream(fileData);
+            bWriter = new BinaryWriter(mStream);
+            bReader = new BinaryReader(mStream);
+
+            
+
+            //initialize all elements
+
+            speedLoss = new int[8];
+            characterOutput = new Character[8];
+
             for (int characterIndex = 0; characterIndex < 8; characterIndex++)
             {
                 characterOutput[characterIndex] = new Character();
             }
 
+
+
+            //setup the position to begin reading data from. All data is end to end
+            // so we'll only set the position once and then read data sequentially from there. 
+
             bReader.BaseStream.Position = 0xEBF48;
 
 
             //Speed Loss
-            for (int characterIndex = 0; characterIndex < 8; characterIndex++)
+            for (int currentIndex = 0; currentIndex < 8; currentIndex++)
             {
-                characterOutput[characterIndex].speedLoss = bReader.ReadInt16();
+                speedLoss[currentIndex] = bReader.ReadInt16();
             }
             //Top Speed
             for (int characterIndex = 0; characterIndex < 8; characterIndex++)
@@ -89,12 +173,11 @@ namespace OverKartSC_Library
             }
 
             
-
-            return characterOutput;
+            
         }
 
 
-        public byte[] saveStats(byte[] fileData, Character[] inputCharacter)
+        public byte[] saveStats(byte[] fileData, Character[] inputCharacter, int[] speedLoss)
         {
             
             mStream = new MemoryStream(fileData);
@@ -107,9 +190,9 @@ namespace OverKartSC_Library
 
 
             //Speed Loss
-            for (int characterIndex = 0; characterIndex < 8; characterIndex++)
+            for (int currentIndex = 0; currentIndex < 8; currentIndex++)
             {
-                bWriter.Write(Convert.ToInt16(inputCharacter[characterIndex].speedLoss));
+                bWriter.Write(Convert.ToInt16(speedLoss[currentIndex]));
             }
             //Top Speed
             for (int characterIndex = 0; characterIndex < 8; characterIndex++)

@@ -34,7 +34,7 @@ namespace OverKartSC
         OKSCLibrary.Character[] characterData = new OKSCLibrary.Character[0];
 
 
-
+        int[] speedLoss = new int[8];
 
 
 
@@ -48,7 +48,7 @@ namespace OverKartSC
                 fileData = File.ReadAllBytes(filePath);
 
 
-                characterData = okLibrary.loadStats(fileData);
+                okLibrary.loadStats(ref characterData, ref speedLoss, fileData);
 
                 saveBtn.Enabled = true;
                 cSelect.Enabled = true;
@@ -62,8 +62,15 @@ namespace OverKartSC
             int outValue = new int();
             int.TryParse(topspeed.Text, out outValue);
             characterData[cSelect.SelectedIndex].topSpeed = outValue;
-            int.TryParse(speedloss.Text, out outValue);
-            characterData[cSelect.SelectedIndex].speedLoss = outValue;
+
+            int.TryParse(sl1.Text, out speedLoss[0]);
+            int.TryParse(sl2.Text, out speedLoss[1]);
+            int.TryParse(sl3.Text, out speedLoss[2]);
+            int.TryParse(sl4.Text, out speedLoss[3]);
+            int.TryParse(sl5.Text, out speedLoss[4]);
+            int.TryParse(sl6.Text, out speedLoss[5]);
+            int.TryParse(sl7.Text, out speedLoss[6]);
+            int.TryParse(sl8.Text, out speedLoss[7]);
 
             int.TryParse(w1.Text, out characterData[cSelect.SelectedIndex].weight[0]);
             int.TryParse(w2.Text, out characterData[cSelect.SelectedIndex].weight[1]);
@@ -111,7 +118,16 @@ namespace OverKartSC
         private void cSelect_SelectedIndexChanged(object sender, EventArgs e)
         {
             topspeed.Text = characterData[cSelect.SelectedIndex].topSpeed.ToString();
-            speedloss.Text = characterData[cSelect.SelectedIndex].speedLoss.ToString();
+
+            sl1.Text = speedLoss[0].ToString();
+            sl2.Text = speedLoss[1].ToString();
+            sl3.Text = speedLoss[2].ToString();
+            sl4.Text = speedLoss[3].ToString();
+            sl5.Text = speedLoss[4].ToString();
+            sl6.Text = speedLoss[5].ToString();
+            sl7.Text = speedLoss[6].ToString();
+            sl8.Text = speedLoss[7].ToString();
+
             w1.Text = characterData[cSelect.SelectedIndex].weight[0].ToString();
             w2.Text = characterData[cSelect.SelectedIndex].weight[1].ToString();
             w3.Text = characterData[cSelect.SelectedIndex].weight[2].ToString();
@@ -165,7 +181,7 @@ namespace OverKartSC
                 savePath = saveDialog.FileName;
 
 
-                byte[] outputROM = okLibrary.saveStats(fileData, characterData);
+                byte[] outputROM = okLibrary.saveStats(fileData, characterData, speedLoss);
 
                 File.WriteAllBytes(savePath, outputROM);
                 MessageBox.Show("Finished");
@@ -178,7 +194,6 @@ namespace OverKartSC
             updateStats();
         }
 
-        
     }
 }
 
